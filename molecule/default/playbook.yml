@@ -8,7 +8,7 @@
 
   roles:
     - role: geerlingguy.java
-    - role: geerlingguy.jenkins
+    - role: ansible-role-jenkins
 
   post_tasks:
     - name: Check if Jenkins is running.
