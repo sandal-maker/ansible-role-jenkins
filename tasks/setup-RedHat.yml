@@ -23,6 +23,7 @@
   get_url:
     url: "{{ jenkins_pkg_url }}/jenkins-{{ jenkins_version }}-1.1.noarch.rpm"
     dest: "/tmp/jenkins-{{ jenkins_version }}-1.1.noarch.rpm"
+    use_proxy: false
   when: jenkins_version is defined
 
 - name: Check if we downloaded a specific version of Jenkins.
